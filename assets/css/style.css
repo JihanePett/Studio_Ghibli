@@ -63,7 +63,7 @@ ul.navbar-nav.mr-auto {
 }
 
 /*----------------------------------------------------Cards*/
-#placeholder {
+#main {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -72,6 +72,7 @@ ul.navbar-nav.mr-auto {
   display: flex;
   flex-wrap: wrap;
 }
+
 .card {
   font-family: "Montserrat", sans-serif;
   border: 1px solid rgb(248, 130, 238);
@@ -85,9 +86,16 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(248, 130, 238, 0.25);
+  margin-bottom: 5px;
 }
 
+h5, h6 {
+    text-align: center;
+}
 
+p{
+    margin-left: 2px;
+}
 /*----------------------------------------------------Jumbotron*/
 .jumbotron {
   margin-right: 20px;
