@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1a1919ad;
+}
+
+/*----------------------------------------------------logo */
+.logo-img {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*----------------------------------------------------Navigation*/
+.bg-light {
+  border: none;
+}
+
+.navbar-light {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+ul.navbar-nav.mr-auto {
+  display: flex;
+  margin: 0 auto;
+}
+
+.nav-item {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-item:hover {
+  border-bottom: 1px solid rgb(248, 130, 238);
+}
+
+.form-control:focus {
+  border-color: rgb(248, 130, 238) 45;
+  box-shadow: 0 0 0 0.2rem rgba(248, 130, 238, 0.25);
+}
+
+/*----------------------------------------------------Footer*/
+.social-links {
+  font-size: 40px;
+  margin-right: 20px;
+  margin-top: 15px;
+  color: #1a1919ad;
+}
+
+.social-links:hover {
+  color: rgb(248, 130, 238);
+}
+
+/*----------------------------------------------------Jumbotron*/
+.jumbotron {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: rgba(248, 130, 238, 0.25);
+}
+
+.display-4 {
+  color: #1a1919ad;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.lead {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*----------------------------------------------------Contact us*/
+.btn-success {
+  background-color: rgb(248, 130, 238);
+  border: rgb(248, 130, 238);
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 2px;
+  color: #1a1919ad;
+}
+
+.btn-success:hover {
+  background-color: rgba(248, 130, 238, 0.25);
+  border: rgba(248, 130, 238, 0.25);
+  color: #1a1919ad;
+}
+/*----------------------------------------------------Media*/
+@media screen and (max-width: 540px) {
+  .navbar-light .navbar-nav .nav-item:hover {
+    border-bottom: 0;
+  }
+}
