@@ -41,7 +41,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="films.html">Animations Summary</a>
-          </li>  
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="About-us.html">About Us</a>
           </li>
@@ -53,7 +53,9 @@
     </nav>
     <!--Jumbotron-->
     <div class="jumbotron">
-      <h1 class="display-4 uppercase">All you need to know about Studio Ghibli's animations is here!</h1>
+      <h1 class="display-4 uppercase">
+        All you need to know about Studio Ghibli's animations is here!
+      </h1>
     </div>
     <!-- Api data -->
     <div class="container">
@@ -61,7 +63,7 @@
         <div class="col-sm-4">
           <div id="placeholder"></div>
         </div>
-        <script type="text/javascript" src="js/data.js"></script>
+
         <!-- Carousel-->
         <div class="col-sm-8">
           <div
@@ -127,6 +129,47 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="modalBody" class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer fixed">
       <!-- Social buttons -->
@@ -166,5 +209,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
   </body>
 </html>
