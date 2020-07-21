@@ -9,7 +9,7 @@ xhr.onload = function () {
     var linkout = "";
     var i;
     for(i = 0; i < data.length; i++) {
-        linkout += '<a class="film-url" onclick="window.open(href, target=_blank, width=100,height=100)" href="' + data[i].url + '">' +
+        linkout += '<a class="film-url" target="_blank" onclick="window.open(href, width=100,height=100)" href="' + data[i].url + '">' +
         data[i].title + '</a><br>';
     }
 
