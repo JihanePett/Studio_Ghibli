@@ -72,6 +72,6 @@ async function buildView(array_data, header) {
   const arrayOfPromises = array_data.map((url) => axios.get(url));
   for await (let response of arrayOfPromises) {
     // $("#modalBody").text(JSON.stringify(response.data));
-    $(`<p><h3>${header}</h3>${JSON.stringify(response.data)}</p>`).appendTo('#modalBody');
+    $(`<h3>${header}</h3><p>${JSON.stringify(response.data).replace(/,/g, '<br>')}</p>`).appendTo('#modalBody');
   }
 }
