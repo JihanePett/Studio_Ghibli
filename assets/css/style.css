@@ -46,10 +46,21 @@ ul.navbar-nav.mr-auto {
 }
 
 .form-control:focus {
-  border-color: rgb(248, 130, 238) 45;
+  border-color: rgb(248, 130, 238);
   box-shadow: 0 0 0 0.2rem rgba(248, 130, 238, 0.25);
 }
 
+/*----------------------------------------------------API Data*/
+.film-url {
+    font-weight: 200;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #1a1919ad;
+}
+
+.film-url:hover{
+    color: rgb(248, 130, 238);
+}
 /*----------------------------------------------------Footer*/
 .social-links {
   font-size: 40px;
@@ -114,7 +125,26 @@ p{
   text-align: center;
 }
 
-/*----------------------------------------------------Contact us*/
+/*----------------------------------------------------contact-us*/
+.h5-contact {
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.center-form {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+textarea.form-control {
+  margin-bottom: 20px;
+}
+
 .btn-success {
   background-color: rgb(248, 130, 238);
   border: rgb(248, 130, 238);
