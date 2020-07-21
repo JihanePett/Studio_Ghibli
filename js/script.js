@@ -15,16 +15,13 @@ xhr.onload = function () {
 
   if (this.readyState == 4 && this.status == 200) {
     data.forEach((films) => {
-      // Create a div with a card class
       const card = document.createElement("div");
       card.setAttribute("class", "card");
       card.setAttribute("style", "width:30rem")
 
-      // Create an h1 and set the text content to the film's title
       const h1 = document.createElement("h1");
       h1.innerHTML = films.title;
 
-      // Create h3 and set the text content to the film's director producer
       const director = document.createElement("h5");
       director.innerHTML = `Director: ${films.director}`;
 
@@ -38,14 +35,11 @@ xhr.onload = function () {
       films.description = films.description.substring(0, 800);
       p.innerHTML = `${films.description}...`;
 
-      // Create an a tag and set the text content to the url
       const score = document.createElement("h6");
-      score.innerHTML = `Rt Score: ${films.rt_score}%`;
+      score.innerHTML = `Rt Score: ${films.rt_score}%`;  
 
-      // Append the cards to the container element
       container.appendChild(card);
 
-      // Each card will contain an h1 and a p
       card.appendChild(h1);
       card.appendChild(p);
       card.appendChild(director);
